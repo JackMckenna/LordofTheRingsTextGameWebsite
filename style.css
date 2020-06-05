@@ -1,0 +1,94 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: impact fantasy;
+    
+}
+.heading{
+    position: absolute;
+    top:25px;
+    width: max-content;
+    background-color: rgb(6, 54, 30);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    
+   
+}
+
+.button {
+    background-color: rgb(6, 53, 29);
+    border: 5px;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: currentColor;
+    text-shadow: 0 0 1px 2px;
+}
+
+.container{
+    width: 800px;
+    max-width: 80%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 10px;
+    margin-top: 20px;
+}
+.btn {
+    background-color: hsl(150, 83%, 11%);
+    border: 1px solid hsla(150, 83%, 30%, 0.5);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+}
+
+.btn:hover {
+    border-color: white;
+    background-color: hsla(150, 83%, 30%, 0.5);
+}
+.map{
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px;
+}
+.mapPosition{
+    border-bottom: none;
+    position: absolute;
+    bottom: 270px;
+    right: 25px;
+    padding: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.sound{
+    border-bottom: none;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    padding: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    body{
+        background-image:url(background.jpg);
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script defer src="game.js"></script>
+    <title>LOTR Game</title>
+</head>
+        <div class="heading">
+            <h1>Lord Of The Rings Text Adventure Game</h1>
+        </div>
+<body>
+    <div class="sound">
+        <button class="button"onclick="music()">Audio</button>
+        <div id="play">
+
+            <audio controls>
+                <source src="13 The Bridge Of Khazad Dum.mp3" type="audio/mp3">
+                <source src="13 The Bridge Of Khazad Dum.mp3" type="audio/mp3">
+              Your browser does not support the music element in this game
+              </audio>
+
+        </div>
+    </div>
+    <div class="container">
+        <div id="text">Text</div>     
+        <div id="option-buttons" class="btn-grid">
+            <button class="btn">Select 1</button>
+            <button class="btn">Select 2</button>
+            <button class="btn">Select 3</button>
+            <button class="btn">Select 4</button>
+        </div>
+    </div>
+    <div class="mapPosition">
+        <button class="button"onclick="journeyHelp()">Maps</button>
+        <div id="journeySelect">
+        
+            <button class="button"onclick="document.getElementById('middle-earth-map.jpg').src='middle-earth-map.jpg'">Main</button>
+            <button class="button button2"onclick="document.getElementById('middle-earth-map.jpg').src='North map.jpg'">North</button>
+            <button class="button button3"onclick="document.getElementById('middle-earth-map.jpg').src='Middle map.jpg'">Midlands</button>
+            <button class="button button4"onclick="document.getElementById('middle-earth-map.jpg').src='South map.jpg'">South</button>
+        </div>
+    </div>
+    
+
+    <div class="map">
+        
+        <img id="middle-earth-map.jpg" width="250" height="220" alt="Routes" usemap="#Routemap" src="middle-earth-map.jpg" width="250" height="220" alt="Routes" usemap="#NorthMap">
+       
+    </div>
+    
+</body>
+</html>
